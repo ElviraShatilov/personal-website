@@ -1,10 +1,9 @@
 import { Col, Container, Row } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
-import colorSharp from "../assets/img/splash.svg";
+import meter1 from "../assets/img/skill-bar-95.svg";
+import meter2 from "../assets/img/skill-bar-95.svg";
+import meter3 from "../assets/img/skill-bar-95.svg";
 
 const Skills = () => {
   const responsive = {
@@ -18,11 +17,11 @@ const Skills = () => {
       items: 3,
     },
     tablet: {
-      breakpoint: { max: 1024, min: 464 },
+      breakpoint: { max: 1024, min: 768 },
       items: 2,
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 768, min: 0 },
       items: 1,
     },
   };
@@ -50,29 +49,89 @@ const Skills = () => {
                 <div className="item">
                   <img src={meter1} alt="Skill image" />
                   <h3>Web Development</h3>
+                  <ul className="tech-stack">
+                    <li>CSS</li>
+                    <li>HTML</li>
+                    <li>JavaScript</li>
+                  </ul>
                 </div>
                 <div className="item">
                   <img src={meter2} alt="Skill image" />
-                  <h3>Databases</h3>
+                  <h3>Front-End Frameworks</h3>
+                  <ul className="tech-stack">
+                    <li>React</li>
+                  </ul>
                 </div>
                 <div className="item">
                   <img src={meter3} alt="Skill image" />
-                  <h3>Python</h3>
+                  <h3>Styling Libraries</h3>
+                  <ul className="tech-stack">
+                    <li>Tailwind CSS</li>
+                    <li>Bootstrap</li>
+                  </ul>
                 </div>
                 <div className="item">
                   <img src={meter1} alt="Skill image" />
-                  <h3>Cloud Computing</h3>
+                  <h3>Back-End Development</h3>
+                  <ul className="tech-stack">
+                    <li>Node.js</li>
+                    <li>Express.js</li>
+                  </ul>
+                </div>
+                <div className="item">
+                  <img src={meter1} alt="Skill image" />
+                  <h3>Full-Stack Frameworks</h3>
+                  <ul className="tech-stack">
+                    <li>MERN</li>
+                  </ul>
+                </div>
+                <div className="item">
+                  <img src={meter1} alt="Skill image" />
+                  <h3>Version Control</h3>
+                  <ul className="tech-stack">
+                    <li>Git</li>
+                    <li>GitHub</li>
+                  </ul>
+                </div>
+                <div className="item">
+                  <img src={meter1} alt="Skill image" />
+                  <h3>Database Management</h3>
+                  <ul className="tech-stack">
+                    <li>MySQL</li>
+                    <li>SQLite</li>
+                  </ul>
+                </div>
+                <div className="item">
+                  <img src={meter1} alt="Skill image" />
+                  <h3>Deployment</h3>
+                  <ul className="tech-stack">
+                    <li>AWS</li>
+                    <li>Render</li>
+                  </ul>
+                </div>
+                <div className="item">
+                  <img src={meter1} alt="Skill image" />
+                  <h3>Responsive Design</h3>
+                  <ul className="tech-stack">
+                    <li>Media Queries</li>
+                    <li>Flexbox</li>
+                    <li>Grid</li>
+                  </ul>
+                </div>
+                <div className="item">
+                  <img src={meter1} alt="Skill image" />
+                  <h3>Testing and Debugging</h3>
+                  <ul className="tech-stack">
+                    <li>Jest</li>
+                    <li>Lighthouse</li>
+                    <li>React Testing Library</li>
+                  </ul>
                 </div>
               </Carousel>
             </div>
           </Col>
         </Row>
       </Container>
-      <img
-        className="background-image-left"
-        src={colorSharp}
-        alt="Background"
-      ></img>
     </section>
   );
 };

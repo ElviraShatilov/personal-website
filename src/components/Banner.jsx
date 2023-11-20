@@ -55,9 +55,9 @@ const Banner = () => {
             <span className="wrap">{text}</span>
           </h1>
           <p>
-            Welcome to my page! It iss so nice to have you. Feel free to browse
+            Welcome to my page! It is so nice to have you. Feel free to browse
             around to learn more about my passion for web development. I come
-            with a rich background in hospitality and sales, where Ive finely
+            with a rich background in hospitality and sales, where I have finely
             tuned my people skills and customer focus. Yet, its the realm of
             technology that truly ignites my passion - its rapid evolution and
             transformative power captivate me endlessly. I am on the lookout for

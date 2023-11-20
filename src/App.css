@@ -14,7 +14,7 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: #121212 !important;
+  background-color: #302c2c !important;
   color: #fff !important;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -69,11 +69,21 @@ p.danger {
   color: red;
 }
 
-@media (min-width: 1700px) {
-  .container {
-    max-width: 100%;
-    height: auto;
-    padding: 0 150px;
+@media (min-width: 768px) {
+  body {
+    background-image: url("./assets/img/md-bg.svg");
+    /* background-position: top center; */
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 1400px) {
+  body {
+    background-image: url("./assets/img/dark-blue-bg.svg");
+    /* background-position: top center; */
+    background-size: 100% auto;
+    background-repeat: no-repeat;
   }
 }
 
@@ -89,8 +99,7 @@ nav.navbar {
 }
 
 nav.navbar.scrolled {
-  padding: 0;
-  background-color: #121212;
+  background-color: #302c2c;
   opacity: 0.95;
 }
 
@@ -175,7 +184,7 @@ span.navbar-text {
   min-width: 206px;
   font-size: 1rem;
   position: relative;
-  background-color: transparent;
+  background-color: #302c2c63;
   transition: 0.3s ease-in-out;
   margin: 0 2rem 0 2rem;
 }
@@ -190,6 +199,7 @@ span.navbar-text {
   height: 100%;
   position: absolute;
   background-color: #fff;
+
   left: 0;
   top: 0;
   z-index: -1;
@@ -197,7 +207,8 @@ span.navbar-text {
 }
 
 .navbar-text button:hover {
-  color: #121212;
+  color: #302c2c;
+  background-color: transparent;
 }
 
 .navbar-text button:hover::before {
@@ -252,7 +263,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .show {
-  background-color: #121212;
+  background-color: #302c2c;
   opacity: 0.95;
 }
 
@@ -271,7 +282,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /***** BANNER CSS *****/
 .banner {
   margin-top: 0;
-  padding: 10rem 2rem;
+  padding: 10rem 2rem 10rem;
   /* background-image: url("./assets/img/dark-banner.jpg");
   background-position: top center;
   background-size: cover;
@@ -325,7 +336,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .banner img {
   animation: updown 3s linear infinite;
-  vertical-align: top;
+  max-width: 400px;
+  margin: 0 auto;
+  display: block;
 }
 @keyframes updown {
   0% {
@@ -345,4 +358,51 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 @media (min-width: 768px) {
+}
+
+/************ Skills Css ************/
+.skill {
+  padding: 0 0 5rem 0;
+  position: relative;
+}
+.skill-bx {
+  background: #1a1a1aaf;
+  border-radius: 64px;
+  text-align: center;
+  padding: 60px 50px;
+  margin-top: -60px;
+}
+.skill h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.skill p {
+  color: #b8b8b8;
+  font-size: 1.2rem;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px 0 75px 0;
+}
+.skill-slider {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+.skill-slider .item img {
+  width: 50%;
+  margin: 0 auto 15px auto;
+}
+
+.skill .item h3 {
+  font-size: 1rem;
+}
+
+.background-image-left {
+  top: 70%;
+  left: 0;
+  position: absolute;
+  bottom: 0;
+  width: 80%;
+  z-index: -4;
+  opacity: 0.5;
 }

@@ -34,7 +34,7 @@ const Contact = () => {
     setButtonText("Send");
     let result = await response.json();
     setFormDetails(formInitialDetails);
-    console.log(result.code);
+
     if (result.code == 200) {
       setStatus({ success: true, message: "Message sent successfully" });
     } else {
@@ -56,7 +56,7 @@ const Contact = () => {
             <h2>Get In Touch</h2>
             <form onSubmit={handleSubmit}>
               <Row>
-                <Col sm={6} className="px-1">
+                <Col sm={12} md={12} className="px-1">
                   <input
                     type="text"
                     value={formDetails.firstName}
@@ -64,7 +64,7 @@ const Contact = () => {
                     onChange={(e) => onFormUpdate("firstName", e.target.value)}
                   />
                 </Col>
-                <Col sm={6} className="px-1">
+                <Col sm={12} md={12} className="px-1">
                   <input
                     type="text"
                     value={formDetails.lastName}
@@ -72,7 +72,7 @@ const Contact = () => {
                     onChange={(e) => onFormUpdate("lastName", e.target.value)}
                   />
                 </Col>
-                <Col sm={6} className="px-1">
+                <Col sm={12} md={12} className="px-1">
                   <input
                     type="email"
                     value={formDetails.email}
@@ -80,7 +80,7 @@ const Contact = () => {
                     onChange={(e) => onFormUpdate("email", e.target.value)}
                   />
                 </Col>
-                <Col>
+                <Col sm={12} md={12} className="px-1">
                   <textarea
                     rows={6}
                     value={formDetails.message}
@@ -91,18 +91,16 @@ const Contact = () => {
                     <span>{buttonText}</span>
                   </button>
                 </Col>
-                {status.message && (
-                  <Col>
-                    <p
-                      className={
-                        status.success === false ? "danger" : "success"
-                      }
-                    >
-                      {status.message}
-                    </p>
-                  </Col>
-                )}
               </Row>
+              {status.message && (
+                <Col>
+                  <p
+                    className={status.success === false ? "danger" : "success"}
+                  >
+                    {status.message}
+                  </p>
+                </Col>
+              )}
             </form>
           </Col>
         </Row>

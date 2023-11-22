@@ -63,6 +63,9 @@ select:focus {
 
 p.success {
   color: green;
+  display: block;
+  margin: 1rem 0;
+  text-align: center;
 }
 
 p.danger {
@@ -550,11 +553,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ CONTACT CSS ************/
 .contact {
-  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+  background-color: #302c2c;
   padding: 60px 0 200px 0;
 }
 .contact img {
-  width: 92%;
+  width: 100%;
 }
 .contact h2 {
   font-size: 45px;
@@ -592,12 +595,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   opacity: 0.8;
 }
 .contact form button {
+  display: block;
   font-weight: 700;
-  color: #000;
+  width: 100%;
+  color: #302c2c;
   background-color: #fff;
-  padding: 14px 48px;
-  font-size: 18px;
-  margin-top: 25px;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  margin: 0 auto;
   border-radius: 0;
   position: relative;
   transition: 0.3s ease-in-out;
@@ -611,7 +616,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .contact form button::before {
   content: "";
-  background: #121212;
+  background: #302c2c;
+  border: 1px solid white;
   width: 0;
   height: 100%;
   position: absolute;
@@ -622,4 +628,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .contact form button:hover::before {
   width: 100%;
+}
+
+/************ Footer Css ************/
+.footer {
+  padding: 0 0 50px 0;
+}
+
+.footer img {
+  width: 30%;
+}
+.footer p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #b8b8b8;
+  letter-spacing: 0.5px;
+  margin-top: 20px;
 }

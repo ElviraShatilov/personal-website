@@ -1,27 +1,29 @@
 import { Col, Container, Nav, Row, Tab } from "react-bootstrap";
 import ProjectCard from "./ProjectCard";
-import projImg1 from "../assets/img/ES-logo-white.png";
+import projImg1 from "../assets/img/1.svg";
+import projImg2 from "../assets/img/2.svg";
+import projImg3 from "../assets/img/3.svg";
 import CertificateCard from "./CertificateCard";
 
 const Projects = () => {
   const projects = [
     {
+      title: "Quick Quiz",
+      description:
+        "A simple quiz application coded in vanilla JavaScript and styled with basic CSS.",
+      imgUrl: projImg1,
+    },
+    {
+      title: "Help Desk App ",
+      description:
+        "This is a simple Help Desk Ticketing System implemented in Python. It is my first Python project.",
+      imgUrl: projImg2,
+    },
+    {
       title: "React Calculator",
       description:
         "This is a simple React Calculator project that provides basic mathematical functions in a user-friendly interface.",
-      imgUrl: projImg1,
-    },
-    {
-      title: "Python ",
-      description:
-        "This is a simple React Calculator project that provides basic mathematical functions in a user-friendly interface.",
-      imgUrl: projImg1,
-    },
-    {
-      title: "Quiz App",
-      description:
-        "This is a simple React Calculator project that provides basic mathematical functions in a user-friendly interface.",
-      imgUrl: projImg1,
+      imgUrl: projImg3,
     },
   ];
 
@@ -72,10 +74,8 @@ const Projects = () => {
     },
   ];
 
-  console.log(certificates);
-
   return (
-    <section className="project" id="project">
+    <section className="project" id="projects">
       <Container>
         <Row>
           <Col>
@@ -112,16 +112,14 @@ const Projects = () => {
                   </Row>
                 </Tab.Pane>
                 <Tab.Pane eventKey="second">
-                  <Row>
-                    {certificates.map((certificate, index) => {
-                      return (
-                        <CertificateCard
-                          {...certificate}
-                          key={index}
-                        ></CertificateCard>
-                      );
-                    })}
-                  </Row>
+                  {certificates.map((certificate, index) => {
+                    return (
+                      <CertificateCard
+                        {...certificate}
+                        key={index}
+                      ></CertificateCard>
+                    );
+                  })}
                 </Tab.Pane>
               </Tab.Content>
             </Tab.Container>

@@ -1,21 +1,12 @@
-import { Col } from "react-bootstrap";
-
 // eslint-disable-next-line react/prop-types
-const CertificateCard = ({ title, source, skills }) => {
+const CertificateCard = ({ title, source, date }) => {
   return (
-    <Col sm={6} md={4}>
-      <div className="cert-bx">
-        <div className="cert-txtx">
-          <h3>{title}</h3>
-          <p>from {source}</p>
-          <ul>
-            {skills.map((skill, index) => {
-              return <li key={index}>{skill}</li>;
-            })}
-          </ul>
-        </div>
+    <div className="cert-bx">
+      <h3>{title}</h3>
+      <div className="cert-txtx">
+        <p>{source} ({date})</p>
       </div>
-    </Col>
+    </div>
   );
 };
 

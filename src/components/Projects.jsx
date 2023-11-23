@@ -12,18 +12,21 @@ const Projects = () => {
       description:
         "A simple quiz application coded in vanilla JavaScript and styled with basic CSS.",
       imgUrl: projImg1,
+      link: "https://github.com/ElviraSidorenko/quiz-app-project",
     },
     {
       title: "Help Desk App ",
       description:
         "This is a simple Help Desk Ticketing System implemented in Python. It is my first Python project.",
       imgUrl: projImg2,
+      link: "https://github.com/ElviraSidorenko/help-desk-tickets-system-python",
     },
     {
       title: "React Calculator",
       description:
         "This is a simple React Calculator project that provides basic mathematical functions in a user-friendly interface.",
       imgUrl: projImg3,
+      link: "https://github.com/ElviraSidorenko/React-calculator-project",
     },
   ];
 

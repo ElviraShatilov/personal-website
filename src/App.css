@@ -73,7 +73,7 @@ p.danger {
 }
 
 @media (min-width: 768px) {
-  body {
+  .banner {
     background-image: url("./assets/img/md-bg.svg");
     /* background-position: top center; */
     background-size: contain;
@@ -82,8 +82,8 @@ p.danger {
 }
 
 @media (min-width: 1400px) {
-  body {
-    background-image: url("./assets/img/dark-blue-bg.svg");
+  .banner {
+    background-image: none;
     /* background-position: top center; */
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -397,6 +397,31 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   list-style: none;
   color: #666;
   font-size: 0.8rem;
+}
+
+.bg-img {
+  position: absolute;
+  width: 50%;
+  top: 10%;
+  right: 60%;
+}
+
+@media (min-width: 1078px) {
+  .bg-img {
+    position: absolute;
+    width: 30%;
+    top: 30%;
+    right: 80%;
+  }
+}
+
+@media (min-width: 1385px) {
+  .bg-img {
+    position: absolute;
+    width: 20%;
+    top: 0%;
+    right: 80%;
+  }
 }
 
 /************ Projects Css ************/

@@ -4,6 +4,7 @@ import "react-multi-carousel/lib/styles.css";
 import meter1 from "../assets/img/skill-bar-95.svg";
 import meter2 from "../assets/img/skill-bar-95.svg";
 import meter3 from "../assets/img/skill-bar-95.svg";
+import bgImg from "../assets/img/bg-img.svg";
 
 const Skills = () => {
   const responsive = {
@@ -29,6 +30,7 @@ const Skills = () => {
   return (
     <section className="skill" id="skills">
       <Container>
+        <img className="bg-img" src={bgImg} alt="Background image"></img>
         <Row>
           <Col>
             <div className="skill-bx">

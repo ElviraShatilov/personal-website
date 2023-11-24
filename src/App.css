@@ -72,24 +72,6 @@ p.danger {
   color: red;
 }
 
-@media (min-width: 768px) {
-  .banner {
-    background-image: url("./assets/img/md-bg.svg");
-    /* background-position: top center; */
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-}
-
-@media (min-width: 1400px) {
-  .banner {
-    background-image: none;
-    /* background-position: top center; */
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-  }
-}
-
 /***** NAVBAR CSS *****/
 
 nav.navbar {
@@ -333,7 +315,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner button:hover svg {
   margin-left: 25px;
 }
-.banner img {
+.banner .headerImg {
   animation: updown 3s linear infinite;
   max-width: 400px;
   margin: 0 auto;
@@ -354,6 +336,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: block;
   width: fit-content;
   border-right: 0.08em solid #666;
+}
+
+.left {
+  position: absolute;
+  width: 30%;
+  top: -4%;
+  left: -2%;
+}
+
+.right {
+  position: absolute;
+  width: 30%;
+  top: -4%;
+  right: -2%;
 }
 
 /************ Skills Css ************/
@@ -489,7 +485,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .nav-link#projects-tabs-tab-second.active {
-  border: 3px solid rgb(0, 255, 247);
+  border: 3px solid #00ffff;
   color: aqua;
 }
 
@@ -501,7 +497,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .proj-imgbx::before {
   content: "";
-  background-color: rgba(0, 255, 255, 0.9);
+  background-color: #00ffff;
   /* background: linear-gradient(90.21deg, #00fbff -5.91%, #034a49 111.58%); */
   opacity: 0.85;
   position: absolute;

@@ -1,10 +1,11 @@
 import { Col, Container, Row } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import meter1 from "../assets/img/skill-bar-95.svg";
-import meter2 from "../assets/img/skill-bar-95.svg";
-import meter3 from "../assets/img/skill-bar-95.svg";
+import meter96 from "../assets/img/skill-bar-96.svg";
+import meter91 from "../assets/img/skill-bar-91.svg";
+import meter85 from "../assets/img/skill-bar-85.svg";
 import bgImg from "../assets/img/bg-img.svg";
+import SkillCard from "./SkillCard";
 
 const Skills = () => {
   const responsive = {
@@ -27,6 +28,59 @@ const Skills = () => {
     },
   };
 
+  const skills = [
+    {
+      imgURL: meter96,
+      name: "Web Development",
+      techItems: ["CSS", "HTML", "JavaScript"],
+    },
+    {
+      imgURL: meter96,
+      name: "Front-End Frameworks",
+      techItems: ["React"],
+    },
+    {
+      imgURL: meter91,
+      name: "Styling Libraries",
+      techItems: ["Tailwind CSS", "Bootstrap"],
+    },
+    {
+      imgURL: meter85,
+      name: "Back-End Development",
+      techItems: ["Node.js", "Express.js"],
+    },
+    {
+      imgURL: meter91,
+      name: "Full-Stack Frameworks",
+      techItems: ["MERN"],
+    },
+    {
+      imgURL: meter96,
+      name: "Version Control",
+      techItems: ["Git", "GitHub"],
+    },
+    {
+      imgURL: meter85,
+      name: "Database Management",
+      techItems: ["MySQL", "SQLite"],
+    },
+    {
+      imgURL: meter91,
+      name: "Deployment",
+      techItems: ["AWS", "Render"],
+    },
+    {
+      imgURL: meter96,
+      name: "Responsive Design",
+      techItems: ["Media Queries", "Flexbox", "CSS Grid"],
+    },
+    {
+      imgURL: meter91,
+      name: "Testing and Debugging",
+      techItems: ["Jest", "Lighthouse", "React Testing Library"],
+    },
+  ];
+
   return (
     <section className="skill" id="skills">
       <Container>
@@ -36,50 +90,24 @@ const Skills = () => {
             <div className="skill-bx">
               <h2>Skills</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                porta pretium arcu, ut gravida dolor ultrices sed. Donec sed
-                vehicula magna. Nulla sed gravida diam. Morbi et orci volutpat
-                odio mattis tincidunt a eu erat. Vestibulum vel commodo magna.
-                Suspendisse sit amet tincidunt lacus. Nulla tempus nibh
-                scelerisque fermentum luctus.
+                Delve into my evolving skill set. Constantly refining and
+                expanding, these skills form a versatile toolkit, allowing me to
+                adapt seamlessly to diverse challenges and contribute
+                effectively to collaborative projects. Explore the dynamic
+                interplay of technical expertise and interpersonal finesse that
+                defines my approach to innovation and problem-solving.
               </p>
               <Carousel
                 responsive={responsive}
                 infinite={true}
                 className="skill-slider"
               >
-                <div className="item">
-                  <img src={meter1} alt="Skill image" />
-                  <h3>Web Development</h3>
-                  <ul className="tech-stack">
-                    <li>CSS</li>
-                    <li>HTML</li>
-                    <li>JavaScript</li>
-                  </ul>
-                </div>
-                <div className="item">
-                  <img src={meter2} alt="Skill image" />
-                  <h3>Front-End Frameworks</h3>
-                  <ul className="tech-stack">
-                    <li>React</li>
-                  </ul>
-                </div>
-                <div className="item">
-                  <img src={meter3} alt="Skill image" />
-                  <h3>Styling Libraries</h3>
-                  <ul className="tech-stack">
-                    <li>Tailwind CSS</li>
-                    <li>Bootstrap</li>
-                  </ul>
-                </div>
-                <div className="item">
-                  <img src={meter1} alt="Skill image" />
-                  <h3>Back-End Development</h3>
-                  <ul className="tech-stack">
-                    <li>Node.js</li>
-                    <li>Express.js</li>
-                  </ul>
-                </div>
+                {skills.map((skill, index) => {
+                  return <SkillCard {...skill} key={index} />;
+                })}
+                {/* 
+                
+                
                 <div className="item">
                   <img src={meter1} alt="Skill image" />
                   <h3>Full-Stack Frameworks</h3>
@@ -128,7 +156,7 @@ const Skills = () => {
                     <li>Lighthouse</li>
                     <li>React Testing Library</li>
                   </ul>
-                </div>
+                </div> */}
               </Carousel>
             </div>
           </Col>

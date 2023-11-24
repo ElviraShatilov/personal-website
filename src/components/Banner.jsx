@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 
 import { ArrowRightCircle } from "react-bootstrap-icons";
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/blue-whale-svgrepo-com.svg";
+import bgImg1 from "../assets/img/bg-images/design5.svg";
+import bgImg2 from "../assets/img/bg-images/design7.svg";
 
 const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -48,6 +50,8 @@ const Banner = () => {
 
   return (
     <section className="banner" id="home">
+      <img src={bgImg1} alt="Background image" className="bgImg left"></img>
+      <img src={bgImg2} alt="Background image" className="bgImg right"></img>
       <Row className="align-items-center">
         <Col className="custom-padding" xs={12} md={6}>
           <h1>
@@ -55,24 +59,20 @@ const Banner = () => {
             <span className="wrap">{text}</span>
           </h1>
           <p>
-            Welcome to my page! It is so nice to have you. Feel free to browse
-            around to learn more about my passion for web development. I come
-            with a rich background in hospitality and sales, where I have finely
-            tuned my people skills and customer focus. Yet, its the realm of
-            technology that truly ignites my passion - its rapid evolution and
-            transformative power captivate me endlessly. I am on the lookout for
-            my next dream team - a group that shares my fervor for technology
-            and innovation. Together, we can weave ideas, drive change, and
-            achieve greatness. If you are seeking a dedicated, adaptable, and
-            collaborative individual to join your ranks, lets connect and
-            explore the remarkable journey ahead.
+            Welcome to my personal portfolio! I'm thrilled to have you here.
+            Take a moment to explore and discover more about my passion for web
+            development. With a diverse background in hospitality and sales,
+            I've honed my people skills, resilience, and ability to thrive in a
+            busy environment. Yet, its the realm of technology that truly
+            ignites my passion - its rapid evolution and transformative power
+            captivate me endlessly.
           </p>
           <button onClick={() => console.log("connect")}>
             Lets connect <ArrowRightCircle />
           </button>
         </Col>
         <Col xs={12} md={6}>
-          <img src={headerImg} alt="Header image" />
+          <img className="headerImg" src={headerImg} alt="Header image" />
         </Col>
       </Row>
     </section>

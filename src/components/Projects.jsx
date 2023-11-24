@@ -17,7 +17,7 @@ const Projects = () => {
     {
       title: "Help Desk App ",
       description:
-        "This is a simple Help Desk Ticketing System implemented in Python. It is my first Python project.",
+        "My first Python project. It is a robust Help Desk Ticketing System implemented in Python.",
       imgUrl: projImg2,
       link: "https://github.com/ElviraSidorenko/help-desk-tickets-system-python",
     },
@@ -84,12 +84,17 @@ const Projects = () => {
           <Col>
             <h2>Projects</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-              porta pretium arcu, ut gravida dolor ultrices sed. Donec sed
-              vehicula magna. Nulla sed gravida diam. Morbi et orci volutpat
-              odio mattis tincidunt a eu erat. Vestibulum vel commodo magna.
-              Suspendisse sit amet tincidunt lacus. Nulla tempus nibh
-              scelerisque fermentum luctus.
+              Firmly believing that the best way to master a skill is by
+              creating something from scratch, I present a curated collection of
+              projects that showcase my hands-on approach to learning. These
+              creations are not just milestones but reflections of my commitment
+              to continuous improvement and exploration. In addition to the
+              projects, you'll find a compilation of certificates earned from
+              resources beyond my core study. These certificates signify my
+              dedication to staying well-versed in the latest industry standards
+              and technologies. Each project and certificate represents a unique
+              chapter in my learning story, reflecting a journey fueled by
+              curiosity, tenacity, and a relentless pursuit of excellence.
             </p>
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
               <Nav

@@ -1,5 +1,7 @@
 # Personal Portfolio Website
 
+![Website screenshot](./src/assets/img/Readme-screenshot.png)
+
 Welcome to my personal portfolio website! This website is built using React and Bootstrap to showcase my skills, projects, and experiences. Follow the instructions below to set up the development environment and start the app.
 
 ## Getting Started

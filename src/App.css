@@ -306,6 +306,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: flex;
   align-items: center;
 }
+
 .banner button svg {
   font-size: 2rem;
   margin-left: 1rem;
@@ -315,6 +316,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner button:hover svg {
   margin-left: 25px;
 }
+
+.no-decoration {
+  text-decoration: none !important;
+}
+
 .banner .headerImg {
   animation: updown 3s linear infinite;
   max-width: 400px;

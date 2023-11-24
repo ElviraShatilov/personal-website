@@ -13,8 +13,8 @@ app.listen(5001, () => console.log("Server Running"));
 const contactEmail = createTransport({
   service: "gmail",
   auth: {
-    user: "XXXX@gmail.com",
-    pass: "XXXX",
+    user: "elvira636583@gmail.com",
+    pass: "dvyskqejpnceskgg",
   },
 });
 

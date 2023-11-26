@@ -3,7 +3,7 @@ const router = Router();
 import cors from "cors";
 import { createTransport } from "nodemailer";
 
-// server used to send send emails
+// server used to send emails
 const app = express();
 app.use(cors());
 app.use(json());

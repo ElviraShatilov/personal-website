@@ -21,7 +21,7 @@ Make sure you have the following installed on your machine:
 
 3. Install the required dependencies.
 
-   npm install
+       npm install
 
 ## Running the App
 

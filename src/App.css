@@ -339,7 +339,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 }
 .wrap {
-  display: block;
+  display: inline;
   width: fit-content;
   border-right: 0.08em solid #666;
 }

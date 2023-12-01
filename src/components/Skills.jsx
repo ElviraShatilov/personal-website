@@ -84,7 +84,8 @@ const Skills = () => {
   return (
     <section className="skill" id="skills">
       <Container>
-        <img className="bg-img" src={bgImg} alt="Background image"></img>
+        <img className="bgImg-left" src={bgImg} alt="Background image"></img>
+        <img className="bgImg-right" src={bgImg} alt="Background image"></img>
         <Row>
           <Col>
             <div className="skill-bx">

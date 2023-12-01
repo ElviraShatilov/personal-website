@@ -54,8 +54,8 @@ const Banner = () => {
   return (
     <Router>
       <section className="banner" id="home">
-        <img src={bgImg1} alt="Background image" className="bgImg left"></img>
-        <img src={bgImg2} alt="Background image" className="bgImg right"></img>
+        <img src={bgImg1} alt="Background image" className="bgImg-left"></img>
+        <img src={bgImg2} alt="Background image" className="bgImg-right"></img>
         <Row className="align-items-center">
           <Col className="custom-padding" xs={12} md={6}>
             <h1>

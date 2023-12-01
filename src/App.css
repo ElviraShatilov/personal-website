@@ -499,41 +499,39 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
   border-radius: 30px;
   overflow: hidden;
-  margin-bottom: 24px;
+  margin-bottom: 1rem;
 }
-.proj-imgbx::before {
-  content: "";
-  background-color: #00ffff;
-  /* background: linear-gradient(90.21deg, #00fbff -5.91%, #034a49 111.58%); */
-  opacity: 0.85;
-  position: absolute;
-  width: 100%;
-  height: 0;
-  transition: 0.4s ease-in-out;
-}
-.proj-imgbx:hover::before {
-  height: 100%;
-}
+
 .proj-txtx {
   position: absolute;
   text-align: center;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
   transition: 0.5s ease-in-out;
   opacity: 0;
   width: 100%;
+  height: 100%;
   color: #302c2c;
+  padding: 25% 1rem 0;
+  backdrop-filter: blur(15px);
 }
 .proj-imgbx:hover .proj-txtx {
-  top: 50%;
   opacity: 1;
 }
+
+.proj-imgbx:hover .proj-imgbx {
+  backdrop-filter: blur(90%);
+}
+
 .proj-txtx h3 {
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1.1em;
+  background: -webkit-linear-gradient(rgb(0, 227, 227), #302c2c);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .proj-txtx span {
   font-style: italic;
@@ -558,12 +556,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border: 1px solid white;
   padding: 1rem;
   width: 70%;
-}
-
-.cert-bx:hover {
-  background-color: white;
-  color: #302c2c;
-  transition: 0.4s ease-in-out;
 }
 
 .cert-bx h3 {

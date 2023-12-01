@@ -287,7 +287,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1;
   margin-bottom: 1rem;
   display: block;
-  min-height: 100px;
+  min-height: 120px;
 }
 .banner p {
   color: #b8b8b8;

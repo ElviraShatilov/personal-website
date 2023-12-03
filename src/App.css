@@ -338,10 +338,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     transform: translateY(-20px);
   }
 }
+
+.banner-intro {
+  display: block;
+  padding-bottom: 1rem;
+  font-size: 1.7rem;
+}
+
 .wrap {
   display: inline;
   width: fit-content;
   border-right: 0.08em solid #666;
+  font-size: 1.7rem;
 }
 
 .banner .bgImg-left {
@@ -358,6 +366,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   max-width: 500px;
   top: -1%;
   right: -2%;
+}
+
+@media (min-width: 576px) {
+  .wrap,
+  .banner-intro {
+    font-size: 2rem;
+  }
 }
 
 /************ Skills Css ************/

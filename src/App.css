@@ -165,12 +165,16 @@ span.navbar-text {
   font-weight: 700;
   color: #fff;
   border: 1px solid #fff;
+  border-radius: 2rem;
   padding: 1rem 3rem;
   min-width: 206px;
   font-size: 1rem;
   position: relative;
   background-color: #302c2c63;
-  transition: 0.3s ease-in-out;
+  box-shadow: inset 0 0 0 0 #ffffff;
+  -webkit-transition: ease-out 0.7s;
+  -moz-transition: ease-out 0.7s;
+  transition: ease-out 0.7s;
   margin: 0 2rem 0 2rem;
 }
 
@@ -178,31 +182,16 @@ span.navbar-text {
   z-index: 1;
 }
 
-.navbar-text button::before {
-  content: "";
-  width: 0%;
-  height: 100%;
-  position: absolute;
-  background-color: #fff;
-
-  left: 0;
-  top: 0;
-  z-index: -1;
-  transition: 0.3s ease-in-out;
-}
-
 .navbar-text button:hover {
   color: #302c2c;
   background-color: transparent;
-}
-
-.navbar-text button:hover::before {
-  width: 100%;
+  box-shadow: inset 400px 0 0 0 #ffffff;
 }
 
 nav.navbar .navbar-toggler {
   padding: 0;
   margin-right: 2rem;
+  border: none;
 }
 
 nav.navbar .navbar-toggler-icon {
@@ -357,7 +346,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 30%;
   max-width: 500px;
   top: -1%;
-  left: -2%;
+  left: 0;
 }
 
 .banner .bgImg-right {
@@ -365,7 +354,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 30%;
   max-width: 500px;
   top: -1%;
-  right: -2%;
+  right: 0;
 }
 
 @media (min-width: 576px) {
@@ -418,27 +407,37 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 0.8rem;
 }
 
+.react-multiple-carousel__arrow {
+  min-width: 50px !important;
+  min-height: 50px !important;
+}
+
+.react-multiple-carousel__arrow--right {
+  right: calc(4% + 15px) !important;
+}
+.react-multiple-carousel__arrow--left {
+  left: calc(4% + 15px) !important;
+}
+
+.react-multi-carousel-list {
+  position: unset !important;
+}
+
 .skill .bgImg-left {
   position: absolute;
   width: 50%;
   max-width: 500px;
   top: -20%;
-  left: -10%;
-  opacity: 0.5;
+  left: 0%;
+  opacity: 0.1;
 }
 .skill .bgImg-right {
   position: absolute;
   width: 50%;
   max-width: 500px;
   bottom: 0;
-  right: -10%;
-  opacity: 0.5;
-}
-
-@media (min-width: 1078px) {
-}
-
-@media (min-width: 1385px) {
+  right: 0;
+  opacity: 0.2;
 }
 
 /************ Projects Css ************/

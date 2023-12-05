@@ -8,9 +8,7 @@ const app = express();
 app.use(cors());
 app.use(json());
 app.use("/", router);
-app.listen("https://mail-server-2p6m.onrender.com", () =>
-  console.log("Server Running")
-);
+app.listen(5001, () => console.log("Server Running"));
 
 const contactEmail = createTransport({
   service: "gmail",

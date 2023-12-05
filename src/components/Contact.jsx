@@ -25,7 +25,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Sending...");
-    let response = await fetch("http://localhost:5001/contact", {
+    let response = await fetch("https://mail-server-2p6m.onrender.com", {
       method: "POST",
       headers: {
         "Content-Type": "Application/json;charset=utf-8",

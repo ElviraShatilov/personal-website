@@ -92,12 +92,15 @@ const Skills = () => {
             <div className="skill-bx">
               <h2>Skills</h2>
               <p>
-                Delve into my evolving skill set. Constantly refining and
-                expanding, these skills form a versatile toolkit, allowing me to
+                Delve into my <strong>evolving skill set</strong>. Constantly{" "}
+                <strong>refining</strong> and <strong>expanding</strong>, these
+                skills form a <strong>versatile toolkit</strong>, allowing me to
                 adapt seamlessly to diverse challenges and contribute
-                effectively to collaborative projects. Explore the dynamic
-                interplay of technical expertise and interpersonal finesse that
-                defines my approach to innovation and problem-solving.
+                effectively to <strong>collaborative projects</strong>. Explore
+                the dynamic interplay of <strong>technical expertise</strong>{" "}
+                and <strong>interpersonal finesse</strong> that defines my
+                approach to <strong>innovation</strong> and{" "}
+                <strong>problem-solving</strong>.
               </p>
               <Carousel
                 responsive={responsive}

@@ -62,13 +62,21 @@ const Banner = () => {
               <span className="wrap">{text}</span>
             </h1>
             <p>
-              Welcome to my personal portfolio! I&apos;m thrilled to have you
-              here. Take a moment to explore and discover more about my passion
-              for web development. With a diverse background in hospitality and
-              sales, I&apos;ve honed my people skills, resilience, and ability
-              to thrive in a busy environment. Yet, it&apos;s the realm of
-              technology that truly ignites my passion - its rapid evolution and
-              transformative power captivate me endlessly.
+              Greetings and a warm welcome to my{" "}
+              <strong>personal portfolio</strong>! I&apos;m absolutely delighted
+              that you&apos;ve stopped by. Feel free to take a leisurely stroll
+              through my space and delve into the fascinating world of my love
+              for <strong>web development</strong>.
+            </p>
+            <p>
+              Drawing from a diverse background in <strong>hospitality</strong>{" "}
+              and <strong>sales</strong>, I&apos;ve cultivated not only my
+              technical skills but also a keen understanding of people,
+              resilience, and the knack for thriving in bustling environments.
+              However, it&apos;s the ever-evolving realm of{" "}
+              <strong>technology</strong> that truly sparks my enthusiasm — its
+              rapid progress and transformative potential never cease to
+              captivate me.
             </p>
             <HashLink className="no-decoration" to="#connect">
               <button>

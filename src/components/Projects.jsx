@@ -88,17 +88,26 @@ const Projects = () => {
           <Col>
             <h2>Projects</h2>
             <p>
-              Firmly believing that the best way to master a skill is by
-              creating something from scratch, I present a curated collection of
-              projects that showcase my hands-on approach to learning. These
-              creations are not just milestones but reflections of my commitment
-              to continuous improvement and exploration. In addition to the
-              projects, you&apos;ll find a compilation of certificates earned
-              from resources beyond my core study. These certificates signify my
-              dedication to staying well-versed in the latest industry standards
-              and technologies. Each project and certificate represents a unique
-              chapter in my learning story, reflecting a journey fueled by
-              curiosity, tenacity, and a relentless pursuit of excellence.
+              Firmly believing that the best way to{" "}
+              <strong>master a skill</strong> is by creating something from
+              scratch, I present a curated collection of
+              <strong>projects</strong> that showcase my{" "}
+              <strong>hands-on approach</strong> to learning. These creations
+              are not just milestones but reflections of my commitment to
+              <strong>continuous improvement</strong> and{" "}
+              <strong>exploration</strong>.
+            </p>
+            <p>
+              In addition to the projects, you&apos;ll find a compilation of
+              <strong>certificates</strong> earned from resources beyond my core
+              study. These certificates signify my dedication to staying
+              well-versed in the
+              <strong>latest industry standards</strong> and{" "}
+              <strong>technologies</strong>. Each project and certificate
+              represents a unique chapter in my <strong>learning story</strong>,
+              reflecting a journey fueled by <strong>curiosity</strong>,{" "}
+              <strong>tenacity</strong>, and a relentless{" "}
+              <strong>pursuit of excellence</strong>.
             </p>
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
               <Nav

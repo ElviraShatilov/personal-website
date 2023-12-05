@@ -40,6 +40,7 @@ ul {
   padding: 0;
   line-height: normal;
   text-decoration: none;
+  font-weight: 200;
 }
 
 a:hover {
@@ -97,6 +98,7 @@ a.navbar-brand {
 .navbar-nav {
   padding-right: 2rem;
   text-align: right;
+  font-size: 1.5rem;
 }
 
 .navbar-link {
@@ -396,6 +398,7 @@ nav.navbar[aria-expanded="true"] {
 .skill h2 {
   /* font-size: 3rem; */
   font-weight: 700;
+  text-align: center;
 }
 .skill p {
   color: #b8b8b8;
@@ -403,6 +406,7 @@ nav.navbar[aria-expanded="true"] {
   letter-spacing: 0.8px;
   line-height: 1.5em;
   margin: 14px 0 75px 0;
+  text-align: justify;
 }
 .skill-slider {
   width: 80%;
@@ -472,7 +476,7 @@ nav.navbar[aria-expanded="true"] {
   letter-spacing: 0.8px;
   line-height: 1.5em;
   margin: 14px auto 30px auto;
-  text-align: center;
+  text-align: justify;
 }
 .project .nav.nav-pills {
   width: 90%;
@@ -597,6 +601,7 @@ nav.navbar[aria-expanded="true"] {
   font-size: 0.8rem;
   font-style: italic;
   margin: 0 auto;
+  text-align: center;
 }
 
 .project .bgImg-left {

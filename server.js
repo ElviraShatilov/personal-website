@@ -15,8 +15,8 @@ app.listen("https://mail-server-2p6m.onrender.com", () =>
 const contactEmail = createTransport({
   service: "gmail",
   auth: {
-    user: import.meta.env.USER,
-    pass: import.meta.env.PASS,
+    user: "elvira636583@gmail.com",
+    pass: "pgpueykfnmhjmesr",
   },
 });
 

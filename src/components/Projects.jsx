@@ -4,6 +4,8 @@ import projImg1 from "../assets/img/1.svg";
 import projImg2 from "../assets/img/2.svg";
 import projImg3 from "../assets/img/3.svg";
 import CertificateCard from "./CertificateCard";
+import bgImg from "../assets/img/bg-images/design3.svg";
+import bgImg2 from "../assets/img/bg-images/design6.svg";
 
 const Projects = () => {
   const projects = [
@@ -79,6 +81,8 @@ const Projects = () => {
 
   return (
     <section className="project" id="projects">
+      <img className="bgImg-left" src={bgImg} alt="Background image"></img>
+      <img className="bgImg-right" src={bgImg2} alt="Background image"></img>
       <Container>
         <Row>
           <Col>
@@ -89,8 +93,8 @@ const Projects = () => {
               projects that showcase my hands-on approach to learning. These
               creations are not just milestones but reflections of my commitment
               to continuous improvement and exploration. In addition to the
-              projects, you'll find a compilation of certificates earned from
-              resources beyond my core study. These certificates signify my
+              projects, you&apos;ll find a compilation of certificates earned
+              from resources beyond my core study. These certificates signify my
               dedication to staying well-versed in the latest industry standards
               and technologies. Each project and certificate represents a unique
               chapter in my learning story, reflecting a journey fueled by

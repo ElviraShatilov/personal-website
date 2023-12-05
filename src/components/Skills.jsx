@@ -4,7 +4,8 @@ import "react-multi-carousel/lib/styles.css";
 import meter96 from "../assets/img/skill-bar-96.svg";
 import meter91 from "../assets/img/skill-bar-91.svg";
 import meter85 from "../assets/img/skill-bar-85.svg";
-import bgImg from "../assets/img/bg-img.svg";
+import bgImg from "../assets/img/bg-images/design6.svg";
+import bgImg2 from "../assets/img/bg-images/design3.svg";
 import SkillCard from "./SkillCard";
 
 const Skills = () => {
@@ -85,7 +86,7 @@ const Skills = () => {
     <section className="skill" id="skills">
       <Container>
         <img className="bgImg-left" src={bgImg} alt="Background image"></img>
-        <img className="bgImg-right" src={bgImg} alt="Background image"></img>
+        <img className="bgImg-right" src={bgImg2} alt="Background image"></img>
         <Row>
           <Col>
             <div className="skill-bx">
@@ -106,58 +107,6 @@ const Skills = () => {
                 {skills.map((skill, index) => {
                   return <SkillCard {...skill} key={index} />;
                 })}
-                {/* 
-                
-                
-                <div className="item">
-                  <img src={meter1} alt="Skill image" />
-                  <h3>Full-Stack Frameworks</h3>
-                  <ul className="tech-stack">
-                    <li>MERN</li>
-                  </ul>
-                </div>
-                <div className="item">
-                  <img src={meter1} alt="Skill image" />
-                  <h3>Version Control</h3>
-                  <ul className="tech-stack">
-                    <li>Git</li>
-                    <li>GitHub</li>
-                  </ul>
-                </div>
-                <div className="item">
-                  <img src={meter1} alt="Skill image" />
-                  <h3>Database Management</h3>
-                  <ul className="tech-stack">
-                    <li>MySQL</li>
-                    <li>SQLite</li>
-                  </ul>
-                </div>
-                <div className="item">
-                  <img src={meter1} alt="Skill image" />
-                  <h3>Deployment</h3>
-                  <ul className="tech-stack">
-                    <li>AWS</li>
-                    <li>Render</li>
-                  </ul>
-                </div>
-                <div className="item">
-                  <img src={meter1} alt="Skill image" />
-                  <h3>Responsive Design</h3>
-                  <ul className="tech-stack">
-                    <li>Media Queries</li>
-                    <li>Flexbox</li>
-                    <li>Grid</li>
-                  </ul>
-                </div>
-                <div className="item">
-                  <img src={meter1} alt="Skill image" />
-                  <h3>Testing and Debugging</h3>
-                  <ul className="tech-stack">
-                    <li>Jest</li>
-                    <li>Lighthouse</li>
-                    <li>React Testing Library</li>
-                  </ul>
-                </div> */}
               </Carousel>
             </div>
           </Col>

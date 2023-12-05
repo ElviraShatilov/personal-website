@@ -76,7 +76,7 @@ p.danger {
 /***** NAVBAR CSS *****/
 
 nav.navbar {
-  padding: 0.5rem 0;
+  padding: 0;
   position: fixed;
   width: 100%;
   top: 0;
@@ -235,6 +235,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 }
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-color: transparent;
+}
+
+nav.navbar[aria-expanded="true"] {
+  background-color: #302c2c;
 }
 
 .show {

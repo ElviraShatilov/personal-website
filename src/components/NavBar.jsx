@@ -31,7 +31,7 @@ const NavBar = () => {
 
   return (
     <Router>
-      <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
+      <Navbar aria-expanded={open} expand="md" className={scrolled ? "scrolled" : ""}>
         <Navbar.Brand href="/">
           <img src={logo} alt="Logo" />
         </Navbar.Brand>

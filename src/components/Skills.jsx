@@ -83,13 +83,13 @@ const Skills = () => {
   ];
 
   return (
-    <section className="skill" id="skills">
+    <section className="skill">
       <Container>
         <img className="bgImg-left" src={bgImg} alt="Background image"></img>
         <img className="bgImg-right" src={bgImg2} alt="Background image"></img>
         <Row>
           <Col>
-            <div className="skill-bx">
+            <div className="skill-bx" id="skills">
               <h2>Skills</h2>
               <p>
                 Delve into my <strong>evolving skill set</strong>. Constantly{" "}

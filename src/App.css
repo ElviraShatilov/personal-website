@@ -74,6 +74,11 @@ p.danger {
   color: red;
 }
 
+.container {
+  width: 90% !important;
+  max-width: 800px !important;
+}
+
 /***** NAVBAR CSS *****/
 
 nav.navbar {
@@ -533,6 +538,7 @@ nav.navbar[aria-expanded="true"] {
   overflow: hidden;
   margin: 0 auto 1rem;
   max-width: 300px;
+  min-width: 200px;
 }
 
 .proj-txtx {

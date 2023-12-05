@@ -9,7 +9,7 @@ const ProjectCard = ({ title, description, imgUrl, link }) => {
           <img src={imgUrl} />
 
           <div className="proj-txtx">
-            <h3>{title}</h3>
+            {/* <h3>{title}</h3> */}
             <span>{description}</span>
           </div>
         </div>

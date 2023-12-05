@@ -8,13 +8,15 @@ const app = express();
 app.use(cors());
 app.use(json());
 app.use("/", router);
-app.listen(5001, () => console.log("Server Running"));
+app.listen("https://mail-server-2p6m.onrender.com", () =>
+  console.log("Server Running")
+);
 
 const contactEmail = createTransport({
   service: "gmail",
   auth: {
-    user: "elvira636583@gmail.com",
-    pass: "pgpueykfnmhjmesr",
+    user: import.meta.env.USER,
+    pass: import.meta.env.PASS,
   },
 });
 
@@ -38,10 +40,6 @@ router.post("/contact", (req, res) => {
            <p>Email: ${email}</p>
            <p>Message: ${message}</p>`,
   };
-
-  res.setHeader("Access-Control-Allow-Origin", "*");
-  res.setHeader("Access-Control-Allow-Methods", "OPTIONS, POST, GET");
-  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
 
   contactEmail.sendMail(mail, (error) => {
     if (error) {

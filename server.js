@@ -12,7 +12,9 @@ const router = Router();
 app.use("/", router); // mounts the router at the root path
 
 // starting Express Server
-app.listen(5001, () => console.log("Server Running"));
+const PORT = process.env.PORT || 5001;
+
+app.listen(PORT, () => console.log(`Server Running on Port ${PORT}`));
 
 // setting up Nodemailer for email configuration
 // configures the email transport using Gmail's SMTP service
@@ -24,7 +26,6 @@ const contactEmail = createTransport({
   },
 });
 
-
 // verifying email configuration
 contactEmail.verify((error) => {
   if (error) {
@@ -33,7 +34,6 @@ contactEmail.verify((error) => {
     console.log("Ready to Send");
   }
 });
-
 
 // defining a POST Route for handling contact form submissions
 router.post("/contact", (req, res) => {

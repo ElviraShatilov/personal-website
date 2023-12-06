@@ -25,13 +25,16 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Sending...");
-    let response = await fetch("http://localhost:5001/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "Application/json;charset=utf-8",
-      },
-      body: JSON.stringify(formDetails),
-    });
+    let response = await fetch(
+      "https://mail-server-2p6m.onrender.com/contact",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "Application/json;charset=utf-8",
+        },
+        body: JSON.stringify(formDetails),
+      }
+    );
     setButtonText("Send");
     let result = await response.json();
     setFormDetails(formInitialDetails);

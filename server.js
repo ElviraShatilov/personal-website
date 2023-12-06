@@ -37,7 +37,7 @@ contactEmail.verify((error) => {
 
 // defining a POST Route for handling contact form submissions
 router.post("/contact", (req, res) => {
-  const name = req.body.firstName + req.body.lastName;
+  const name = req.body.firstName + " " + req.body.lastName;
   const email = req.body.email;
   const message = req.body.message;
   const mail = {

@@ -8,7 +8,9 @@ const app = express();
 app.use(cors());
 app.use(json());
 app.use("/", router);
-app.listen("https://mail-server-2p6m.onrender.com", () =>
+
+const PORT = process.env.PORT || 5001;
+app.listen(PORT, () =>
   console.log("Server Running")
 );
 

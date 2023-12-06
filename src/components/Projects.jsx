@@ -93,16 +93,13 @@ const Projects = () => {
               scratch, I present a curated collection of
               <strong>projects</strong> that showcase my{" "}
               <strong>hands-on approach</strong> to learning. These creations
-              are not just milestones but reflections of my commitment to
-              <strong>continuous improvement</strong> and{" "}
+              are not just milestones but reflections of my commitment to <strong>continuous improvement</strong> and{" "}
               <strong>exploration</strong>.
             </p>
             <p>
-              In addition to the projects, you&apos;ll find a compilation of
-              <strong>certificates</strong> earned from resources beyond my core
+              In addition to the projects, you&apos;ll find a compilation of <strong>certificates</strong> earned from resources beyond my core
               study. These certificates signify my dedication to staying
-              well-versed in the
-              <strong>latest industry standards</strong> and{" "}
+              well-versed in the <strong>latest industry standards</strong> and{" "}
               <strong>technologies</strong>. Each project and certificate
               represents a unique chapter in my <strong>learning story</strong>,
               reflecting a journey fueled by <strong>curiosity</strong>,{" "}

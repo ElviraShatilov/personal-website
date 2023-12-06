@@ -79,6 +79,13 @@ p.danger {
   max-width: 800px !important;
 }
 
+@media (min-width: 1600px ) {
+  .container {
+    width: 90% !important;
+    max-width: 1024px !important;
+  }
+}
+
 /***** NAVBAR CSS *****/
 
 nav.navbar {

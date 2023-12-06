@@ -1,15 +1,21 @@
 import express, { Router, json } from "express";
-const router = Router();
 import cors from "cors";
 import { createTransport } from "nodemailer";
 
-// server used to send emails
+// creating Express App and configuring middleware
 const app = express();
-app.use(cors());
-app.use(json());
-app.use("/", router);
+app.use(cors()); // enables CORS for all routes
+app.use(json()); // parses incoming JSON requests
+
+// creating Express Router
+const router = Router();
+app.use("/", router); // mounts the router at the root path
+
+// starting Express Server
 app.listen(5001, () => console.log("Server Running"));
 
+// setting up Nodemailer for email configuration
+// configures the email transport using Gmail's SMTP service
 const contactEmail = createTransport({
   service: "gmail",
   auth: {
@@ -18,6 +24,8 @@ const contactEmail = createTransport({
   },
 });
 
+
+// verifying email configuration
 contactEmail.verify((error) => {
   if (error) {
     console.log(error);
@@ -26,6 +34,8 @@ contactEmail.verify((error) => {
   }
 });
 
+
+// defining a POST Route for handling contact form submissions
 router.post("/contact", (req, res) => {
   const name = req.body.firstName + req.body.lastName;
   const email = req.body.email;

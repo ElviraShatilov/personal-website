@@ -90,8 +90,7 @@ const Projects = () => {
             <p>
               Firmly believing that the best way to{" "}
               <strong>master a skill</strong> is by creating something from
-              scratch, I present a curated collection of
-              <strong>projects</strong> that showcase my{" "}
+              scratch, I present a curated collection of{" "}<strong>projects</strong> that showcase my{" "}
               <strong>hands-on approach</strong> to learning. These creations
               are not just milestones but reflections of my commitment to <strong>continuous improvement</strong> and{" "}
               <strong>exploration</strong>.
